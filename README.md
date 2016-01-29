@@ -1,4 +1,4 @@
-# mitocw-algos
+# algos
 
 This repository contains some of the algorithms I have learnt and implemented.
 
