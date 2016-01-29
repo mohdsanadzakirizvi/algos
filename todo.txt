@@ -2,4 +2,5 @@ List of todo actions to be performed on respective algorithms:
 
 1. document_distance.py :
   [ ] - Determine and improve the time complexity. 
-  [ ] - right now the split() function is splitting words based on white spaces ,improve it so that it splits the words on basis of other delimeters. 
+  [ ] - right now the split() function is splitting words based on white spaces ,improve it so that it splits 
+        the words on basis of other delimeters. 
