@@ -5,6 +5,6 @@ List of todo actions to be performed on respective algorithms:
   [X] - right now the split() function is splitting words based on white spaces ,improve it so that it splits 
         the words on basis of other delimeters. 
   [ ] - Replace two if's by a single if-else when looking for word in Dictionary that way one less comparison will be made.
-  [ ] - Instead of reading lines into a list of lines and then creating a dictionary , directly read line by line and create a           dictionary . This will save memory and time and prevent one whole function and function call.
+  [ ] - Instead of reading lines into a list of lines and then creating a dictionary , directly read line by line and create a dictionary . This will save memory and time and prevent one whole function and function call.
 WHERE [ ] = Not Done
 [X] = Done
