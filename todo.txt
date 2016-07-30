@@ -1,6 +1,9 @@
 List of todo actions to be performed on respective algorithms:
 
 1. document_distance.py :
+
+Thanks to Agam Agarwal for these optimization suggestions: 
+
   [ ] - Determine and improve the time complexity. 
   [X] - right now the split() function is splitting words based on white spaces ,improve it so that it splits 
         the words on basis of other delimeters. 
@@ -8,5 +11,11 @@ List of todo actions to be performed on respective algorithms:
   [ ] - Instead of reading lines into a list of lines and then creating a dictionary , directly read line 
         by line and create a dictionary .This will save memory and time and prevent one whole function 
         and function call.
+
+Thanks to Saimadhav Heblikar for these suggestions: 
+
+  [ ] - Remove redundant declarations for data structures used in the program to save on execution.(Eg. [], {})
+  [ ] - Line 8 : Directly return doc.readlines.
+
 WHERE [ ] = Not Done
 [X] = Done
