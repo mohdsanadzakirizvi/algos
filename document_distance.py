@@ -3,18 +3,14 @@ from string import maketrans
 
 
 def openFile(docname):
-    lines = []
     with open(docname, 'r') as doc:
-        lines = doc.readlines()
-    return lines
-
+        return doc.readlines()
 
 def wordSplit(lines):
     lines2 = []
     tranTable = maketrans('?.!;:,-(){}[]_\n\t', ' '*16)
     for line in lines:
-        line = line.lower()
-        line = line.translate(tranTable)
+        line = (line.lower()).translate(tranTable)
         lines2.append(line.split())
     return lines2
 
@@ -46,24 +42,18 @@ def innerProduct(dictA, dictB):
             num += dictA[word]*dictB[word]
     return num
 
-
-def main():
-    num = denom = 0
-    l1 = l2 = []
-    dictA = dictB = {}
-    documentDistance = 0.0
-    f1 = raw_input("Enter file 1 name ")
-    f2 = raw_input("Enter file 2 name ")
-    l1 = openFile(f1)
-    l2 = openFile(f2)
-    l1 = wordSplit(l1)
-    l2 = wordSplit(l2)
-    dictA = linesToDict(l1)
-    dictB = linesToDict(l2)
+def docDist(dictA, dictB):
     num = innerProduct(dictA, dictB)
     denom = sqrt(innerProduct(dictA, dictA)*innerProduct(dictB, dictB))
-    documentDistance = acos(num/denom)
-    print "The document distance is %lf" % (documentDistance)
+    return acos(num/denom)
+   
+
+def main():
+    file1 = raw_input("Enter file 1 name ")
+    file2 = raw_input("Enter file 2 name ")
+    dictA = linesToDict(wordSplit(openFile(file1)))
+    dictB = linesToDict(wordSplit(openFile(file2)))
+    print "The document distance is:", docDist(dictA, dictB)
 
 if __name__ == '__main__':
     main()

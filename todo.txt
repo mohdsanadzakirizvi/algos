@@ -14,8 +14,8 @@ Thanks to Agam Agarwal for these optimization suggestions:
 
 Thanks to Saimadhav Heblikar for these suggestions: 
 
-  [ ] - Remove redundant declarations for data structures used in the program to save on execution.(Eg. [], {})
-  [ ] - Line 8 : Directly return doc.readlines.
+  [X] - Remove redundant declarations for data structures used in the program to save on execution.(Eg. [], {})
+  [X] - Line 8 : Directly return doc.readlines.
 
 WHERE [ ] = Not Done
 [X] = Done
